@@ -26,13 +26,7 @@ public class generaterStock : MonoBehaviour {
 
 	private string db = "";
 
-	void LoadStock(){ // my own function
-		
-		GameObject item, addItem; //create item varible
-		Vector3 pos, lastspot, diff;
-		pos = lastspot = diff = new Vector3 (0, 0, 0);
-
-		//import db
+	string GetText(){
 		string fileName = "Assets/Scripts/sampletest.json";
 		try{
 			StreamReader theFile = new StreamReader(fileName);
@@ -44,9 +38,17 @@ public class generaterStock : MonoBehaviour {
 			db = "";
 			print ("catch");
 		}
+		return db;
+	}
+
+	void LoadStock(string dbtext){ // my own function
+		
+		GameObject item, addItem; //create item varible
+		Vector3 pos, lastspot, diff;
+		pos = lastspot = diff = new Vector3 (0, 0, 0);
 
 		//change the db to json so unity can read
-		ItemHolder stuff = JsonUtility.FromJson<ItemHolder> (db);
+		ItemHolder stuff = JsonUtility.FromJson<ItemHolder> (dbtext);
 
 		// instantiate the items into the gameplay
 		foreach (Item stock in stuff.items) {
@@ -81,7 +83,7 @@ public class generaterStock : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		LoadStock (); // function call
+		LoadStock (GetText()); // function call
 	}
 	
 	// Update is called once per frame
