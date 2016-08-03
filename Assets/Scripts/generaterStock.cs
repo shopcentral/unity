@@ -41,6 +41,18 @@ public class generaterStock : MonoBehaviour {
 		return db;
 	}
 
+	IEnumerator LoadFromWeb(){
+		print("space key pressed");
+		foreach(Transform child in transform) {
+			Destroy(child.gameObject);
+		}
+		WWW www = new WWW("http://localhost:8080/bourne/central");
+		//yield return new WaitUntil(() => www.isDone);
+		yield return www;
+		LoadStock (www.text);
+			
+	}
+
 	void LoadStock(string dbtext){ // my own function
 		
 		GameObject item, addItem; //create item varible
@@ -71,6 +83,7 @@ public class generaterStock : MonoBehaviour {
 				item.name =stock.Name;
 				item.transform.localScale = scale;
 				item.transform.parent = transform;
+				print("inloop "+stock.shape);
 
 			} else
 				print ("can't instantiate");
@@ -84,10 +97,12 @@ public class generaterStock : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		LoadStock (GetText()); // function call
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (Input.GetKeyDown (KeyCode.Space))
+			StartCoroutine (LoadFromWeb ());
 	}
 }
