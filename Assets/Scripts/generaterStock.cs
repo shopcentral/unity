@@ -41,12 +41,12 @@ public class generaterStock : MonoBehaviour {
 		return db;
 	}
 
-	IEnumerator LoadFromWeb(){
+	public IEnumerator LoadFromWeb(string shop = "central"){
 		print("space key pressed");
 		foreach(Transform child in transform) {
 			Destroy(child.gameObject);
 		}
-		WWW www = new WWW("http://localhost:8080/bourne/central");
+		WWW www = new WWW("http://localhost:8080/bourne/"+shop);
 		//yield return new WaitUntil(() => www.isDone);
 		yield return www;
 		LoadStock (www.text);
@@ -83,7 +83,7 @@ public class generaterStock : MonoBehaviour {
 				item.name =stock.Name;
 				item.transform.localScale = scale;
 				item.transform.parent = transform;
-				print("inloop "+stock.shape);
+				//print("inloop "+stock.shape);
 
 			} else
 				print ("can't instantiate");
