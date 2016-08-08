@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: 1f2b8468843ec4b09a9dc98f7f2ea193
+timeCreated: 1470692703
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: cushion_big
+    100002: cushion_big_001
+    100004: cushion_big_002
+    100006: cushion_sitt
+    100008: cushion_sitt_001
+    100010: cushion_sitt_002
+    100012: cushion_sitt_003
+    100014: cushion_small
+    100016: cushion_small_001
+    100018: cushion_small_002
+    100020: dummy_floor
+    100022: //RootNode
+    100024: Soffa
+    100026: Soffa_001
+    100028: Soffa_legs
+    100030: Soffa_sides
+    400000: cushion_big
+    400002: cushion_big_001
+    400004: cushion_big_002
+    400006: cushion_sitt
+    400008: cushion_sitt_001
+    400010: cushion_sitt_002
+    400012: cushion_sitt_003
+    400014: cushion_small
+    400016: cushion_small_001
+    400018: cushion_small_002
+    400020: dummy_floor
+    400022: //RootNode
+    400024: Soffa
+    400026: Soffa_001
+    400028: Soffa_legs
+    400030: Soffa_sides
+    2300000: cushion_big
+    2300002: cushion_big_001
+    2300004: cushion_big_002
+    2300006: cushion_sitt
+    2300008: cushion_sitt_001
+    2300010: cushion_sitt_002
+    2300012: cushion_sitt_003
+    2300014: cushion_small
+    2300016: cushion_small_001
+    2300018: cushion_small_002
+    2300020: dummy_floor
+    2300022: Soffa
+    2300024: Soffa_001
+    2300026: Soffa_legs
+    2300028: Soffa_sides
+    3300000: cushion_big
+    3300002: cushion_big_001
+    3300004: cushion_big_002
+    3300006: cushion_sitt
+    3300008: cushion_sitt_001
+    3300010: cushion_sitt_002
+    3300012: cushion_sitt_003
+    3300014: cushion_small
+    3300016: cushion_small_001
+    3300018: cushion_small_002
+    3300020: dummy_floor
+    3300022: Soffa
+    3300024: Soffa_001
+    3300026: Soffa_legs
+    3300028: Soffa_sides
+    4300000: cushion_small
+    4300002: cushion_small_001
+    4300004: cushion_small_002
+    4300006: cushion_big_001
+    4300008: cushion_big
+    4300010: Soffa_legs
+    4300012: cushion_sitt_001
+    4300014: cushion_sitt
+    4300016: cushion_sitt_002
+    4300018: cushion_big_002
+    4300020: Soffa
+    4300022: Soffa_001
+    4300024: Soffa_sides
+    4300026: cushion_sitt_003
+    4300028: dummy_floor
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

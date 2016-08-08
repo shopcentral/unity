@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: db72d74f66f8f4c99b135b1a005e4204
+timeCreated: 1470692810
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arm
+    100002: Camera_Target
+    100004: Chair
+    100006: Cylinder
+    100008: //RootNode
+    100010: Pedestal
+    100012: Stool
+    100014: Wheel
+    100016: Wheel_001
+    100018: Wheel_002
+    100020: Wheel_003
+    100022: Wheel_004
+    100024: Wheel_Cover
+    100026: Wheel_Cover_001
+    100028: Wheel_Cover_002
+    100030: Wheel_Cover_003
+    100032: Wheel_Cover_004
+    100034: Wheel_Pin
+    100036: Wheel_Pin_001
+    100038: Wheel_Pin_002
+    100040: Wheel_Pin_003
+    100042: Wheel_Pin_004
+    400000: Arm
+    400002: Camera_Target
+    400004: Chair
+    400006: Cylinder
+    400008: //RootNode
+    400010: Pedestal
+    400012: Stool
+    400014: Wheel
+    400016: Wheel_001
+    400018: Wheel_002
+    400020: Wheel_003
+    400022: Wheel_004
+    400024: Wheel_Cover
+    400026: Wheel_Cover_001
+    400028: Wheel_Cover_002
+    400030: Wheel_Cover_003
+    400032: Wheel_Cover_004
+    400034: Wheel_Pin
+    400036: Wheel_Pin_001
+    400038: Wheel_Pin_002
+    400040: Wheel_Pin_003
+    400042: Wheel_Pin_004
+    2300000: Arm
+    2300002: Chair
+    2300004: Cylinder
+    2300006: Pedestal
+    2300008: Stool
+    2300010: Wheel
+    2300012: Wheel_001
+    2300014: Wheel_002
+    2300016: Wheel_003
+    2300018: Wheel_004
+    2300020: Wheel_Cover
+    2300022: Wheel_Cover_001
+    2300024: Wheel_Cover_002
+    2300026: Wheel_Cover_003
+    2300028: Wheel_Cover_004
+    2300030: Wheel_Pin
+    2300032: Wheel_Pin_001
+    2300034: Wheel_Pin_002
+    2300036: Wheel_Pin_003
+    2300038: Wheel_Pin_004
+    3300000: Arm
+    3300002: Chair
+    3300004: Cylinder
+    3300006: Pedestal
+    3300008: Stool
+    3300010: Wheel
+    3300012: Wheel_001
+    3300014: Wheel_002
+    3300016: Wheel_003
+    3300018: Wheel_004
+    3300020: Wheel_Cover
+    3300022: Wheel_Cover_001
+    3300024: Wheel_Cover_002
+    3300026: Wheel_Cover_003
+    3300028: Wheel_Cover_004
+    3300030: Wheel_Pin
+    3300032: Wheel_Pin_001
+    3300034: Wheel_Pin_002
+    3300036: Wheel_Pin_003
+    3300038: Wheel_Pin_004
+    4300000: Cylinder
+    4300002: Chair
+    4300004: Stool
+    4300006: Arm
+    4300008: Pedestal
+    4300010: Wheel_004
+    4300012: Wheel_Pin_004
+    4300014: Wheel_Cover_004
+    4300016: Wheel_003
+    4300018: Wheel_Cover_003
+    4300020: Wheel_Pin_003
+    4300022: Wheel_002
+    4300024: Wheel_Pin_002
+    4300026: Wheel_Cover_002
+    4300028: Wheel_001
+    4300030: Wheel_Cover_001
+    4300032: Wheel_Pin_001
+    4300034: Wheel
+    4300036: Wheel_Pin
+    4300038: Wheel_Cover
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
