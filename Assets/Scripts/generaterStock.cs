@@ -25,9 +25,10 @@ public class ItemHolder
 public class generaterStock : MonoBehaviour {
 
 	private string db = "";
+	public bool useweb;
 
-	string GetText(){
-		string fileName = "Assets/Scripts/sampletest.json";
+	string GetText(string json="central"){
+		string fileName = "Assets/Scripts/"+json+".json";
 		try{
 			StreamReader theFile = new StreamReader(fileName);
 			using (theFile) {
@@ -38,6 +39,8 @@ public class generaterStock : MonoBehaviour {
 			db = "";
 			print ("catch");
 		}
+		//return db;
+		LoadStock(db);
 		return db;
 	}
 
@@ -92,17 +95,27 @@ public class generaterStock : MonoBehaviour {
 		//Vector3 scale = addItem.transform.localScale;
 
 	}
-		
+	public void Loader(string room="central"){
+		if (useweb)
+			StartCoroutine (LoadFromWeb (room));
+		else
+			GetText (room); //LoadStock(GetText (room));
+	}	
 
 	// Use this for initialization
 	void Start () {
-		LoadStock (GetText()); // function call
+		Loader ("central");
+		//GetText(); // function call
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Space))
-			StartCoroutine (LoadFromWeb ());
+			Loader();
+		else if (Input.GetKeyDown (KeyCode.F))
+			Loader ("furniture");
+		else if (Input.GetKeyDown (KeyCode.A))
+			Loader ("fruit");
 	}
 }

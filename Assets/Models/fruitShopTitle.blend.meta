@@ -1,47 +1,22 @@
 fileFormatVersion: 2
-guid: 1e140bbd438da44d4a670a682fc2266c
-timeCreated: 1470692693
+guid: 89b62dae551f6409782540657639c186
+timeCreated: 1470732116
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Ch_leg
-    100002: Ch_leg_001
-    100004: Ch_rubber
-    100006: Ch_rubber_001
-    100008: Ch_seat
-    100010: //RootNode
-    100012: Ch_leg_MeshPart0
-    100014: Ch_leg_MeshPart1
-    400000: Ch_leg
-    400002: Ch_leg_001
-    400004: Ch_rubber
-    400006: Ch_rubber_001
-    400008: Ch_seat
-    400010: //RootNode
-    400012: Ch_leg_MeshPart0
-    400014: Ch_leg_MeshPart1
-    2300000: Ch_leg
-    2300002: Ch_leg_001
-    2300004: Ch_rubber
-    2300006: Ch_rubber_001
-    2300008: Ch_seat
-    2300010: Ch_leg_MeshPart0
-    2300012: Ch_leg_MeshPart1
-    3300000: Ch_leg
-    3300002: Ch_leg_001
-    3300004: Ch_rubber
-    3300006: Ch_rubber_001
-    3300008: Ch_seat
-    3300010: Ch_leg_MeshPart0
-    3300012: Ch_leg_MeshPart1
-    4300000: Ch_seat
-    4300002: Ch_rubber_001
-    4300004: Ch_rubber
-    4300006: Ch_leg_001
-    4300008: Ch_leg
-    4300010: Ch_leg_MeshPart0
-    4300012: Ch_leg_MeshPart1
+    100000: //RootNode
+    100002: Text_MeshPart0
+    100004: Text_MeshPart1
+    400000: //RootNode
+    400002: Text_MeshPart0
+    400004: Text_MeshPart1
+    2300000: Text_MeshPart0
+    2300002: Text_MeshPart1
+    3300000: Text_MeshPart0
+    3300002: Text_MeshPart1
+    4300000: Text_MeshPart0
+    4300002: Text_MeshPart1
     7400000: Default Take
     9500000: //RootNode
   materials:
