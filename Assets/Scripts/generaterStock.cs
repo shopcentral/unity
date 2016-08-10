@@ -27,28 +27,41 @@ public class generaterStock : MonoBehaviour {
 	private string db = "";
 	public bool useweb;
 
+//	string GetText(string json="central"){
+//		string fileName = "Assets/Resources/"+json+".json";
+//		try{
+//			StreamReader theFile = new StreamReader(fileName);
+//			using (theFile) {
+//				db = theFile.ReadToEnd ();
+//			}
+//		}
+//		catch {
+//			db = "";
+//			print ("catch");
+//		}
+//		return db;
+//	}
+
 	string GetText(string json="central"){
-		string fileName = "Assets/Scripts/"+json+".json";
-		try{
-			StreamReader theFile = new StreamReader(fileName);
-			using (theFile) {
-				db = theFile.ReadToEnd ();
-			}
-		}
-		catch {
-			db = "";
-			print ("catch");
-		}
-		//return db;
-		LoadStock(db);
+		string fileName = json ;//+".txt";
+		//try{
+			TextAsset theFile = Resources.Load(fileName) as TextAsset;
+			db = theFile.text;
+			print("db" +db);
+
+//		}
+//		catch {
+//			//db = "{}";
+//			print ("catch");
+//		}
 		return db;
 	}
 
 	public IEnumerator LoadFromWeb(string shop = "central"){
-		print("space key pressed");
-		foreach(Transform child in transform) {
-			Destroy(child.gameObject);
-		}
+//		print("space key pressed");
+//		foreach(Transform child in transform) {
+//			Destroy(child.gameObject);
+//		}
 		WWW www = new WWW("http://localhost:8080/bourne/"+shop);
 		//yield return new WaitUntil(() => www.isDone);
 		yield return www;
@@ -62,6 +75,9 @@ public class generaterStock : MonoBehaviour {
 		Vector3 pos, lastspot, diff;
 		pos = lastspot = diff = new Vector3 (0, 0, 0);
 
+		foreach(Transform child in transform) {
+			Destroy(child.gameObject);
+		}
 		//change the db to json so unity can read
 		ItemHolder stuff = JsonUtility.FromJson<ItemHolder> (dbtext);
 
@@ -99,13 +115,13 @@ public class generaterStock : MonoBehaviour {
 		if (useweb)
 			StartCoroutine (LoadFromWeb (room));
 		else
-			GetText (room); //LoadStock(GetText (room));
+			LoadStock(GetText (room)); //LoadStock(GetText (room));
 	}	
 
 	// Use this for initialization
 	void Start () {
 		Loader ("central");
-		//GetText(); // function call
+		//LoadStock(GetText()); // function call
 
 	}
 	
@@ -115,7 +131,7 @@ public class generaterStock : MonoBehaviour {
 			Loader();
 		else if (Input.GetKeyDown (KeyCode.F))
 			Loader ("furniture");
-		else if (Input.GetKeyDown (KeyCode.A))
+		else if (Input.GetKeyDown (KeyCode.T))
 			Loader ("fruit");
 	}
 }

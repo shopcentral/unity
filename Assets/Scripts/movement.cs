@@ -6,6 +6,10 @@ public class movement : MonoBehaviour {
 	
 	public float speed = 10f;
 	// Use this for initialization
+
+	public void Spin() {
+		transform.Rotate(0,180,0);
+	}
 	void Start () 
 	{
 
@@ -29,5 +33,7 @@ public class movement : MonoBehaviour {
 		tr.eulerAngles = new Vector3(0,tr.eulerAngles.y,0);
 
 		transform.Rotate (0,Input.GetAxis("Horizontal"),0);
+		if (Input.GetKeyDown (KeyCode.P))
+			Spin ();
 	}
 }

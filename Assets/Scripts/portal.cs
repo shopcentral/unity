@@ -7,9 +7,12 @@ using System.IO;
 public class portal : MonoBehaviour {
 	public generaterStock generate;
 	public string shopname;
+	public movement player;
+
 	void OnCollisionEnter (Collision col)
 	{
-		StartCoroutine (generate.LoadFromWeb (shopname));
+		generate.Loader (shopname);
+		player.Spin ();
 	}
 
 	// Use this for initialization
