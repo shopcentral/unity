@@ -15,7 +15,7 @@ public struct Item
 	public int mode;
 	public Vector3 pos;
 	public Quaternion rot;
-	public int scale;
+	public float scale;
 };
 [System.Serializable]
 public class ItemHolder
