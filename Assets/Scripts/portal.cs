@@ -8,11 +8,12 @@ public class portal : MonoBehaviour {
 	public generaterStock generate;
 	public string shopname;
 	public movement player;
+	public float speed;
 
 	void OnCollisionEnter (Collision col)
 	{
 		generate.Loader (shopname);
-		player.Spin ();
+		player.Spin (speed);
 	}
 
 	// Use this for initialization

@@ -5,9 +5,11 @@ public class movement : MonoBehaviour {
 	public GameObject head;
 	
 	public float speed = 10f;
+	float varspeed = 2f;
 	// Use this for initialization
 
-	public void Spin() {
+	public void Spin(float speed) {
+		varspeed = speed;
 		transform.Rotate(0,180,0);
 	}
 	void Start () 
@@ -20,7 +22,7 @@ public class movement : MonoBehaviour {
 	{
 		if (Input.GetMouseButton (0)) {
 			Debug.Log ("Pressed left click.");
-			GetComponent<Rigidbody> ().AddForce (1 * speed * head.transform.forward);
+			GetComponent<Rigidbody> ().AddForce (varspeed * speed * head.transform.forward);
 		}
 		Transform tr;
 		//		if (Input.GetAxis("Vertical") > 0)
@@ -34,6 +36,6 @@ public class movement : MonoBehaviour {
 
 		transform.Rotate (0,Input.GetAxis("Horizontal"),0);
 		if (Input.GetKeyDown (KeyCode.P))
-			Spin ();
+			Spin (varspeed);
 	}
 }
